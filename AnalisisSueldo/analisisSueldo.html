@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+    <title>Calcular</title>
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navegacion">
+        <a class="contenedorLogo" href="../index.html">
+            <img src="../img/brote.png" class="logo" alt="">HOME
+        </a>
+
+        <div class="lista">
+            <ul class="lista">
+                <li cla>
+                    <a href="../FigurasGeometricas/figuras.html">Taller #1</a>
+                </li>
+                <li>
+                    <a href="../PrecioConDescuento/descuento.html">Taller #2</a>
+                </li>
+                <li>
+                    <a href="../PromedioModaMediana/promedios.html">Taller #3</a>
+                </li>
+                <li>
+                    <a href="../AnalisisSueldo/analisisSueldo.html">Taller #4</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+<header>
+    <h1>Analisis de Sueldo</h1>
+</header>
+<div class="seccionSueldo">
+<section class="primeraSeccion">
+    <h3>Calcular capacidad de endeudamiento</h3>
+    <div>Ingrese su sueldo</div>
+    <input type="number" name="" id="sueldo">
+    <div>Ingrese sus gastos</div>
+    <input type="number" name="" id="gastos"><br>
+    <input class="calcularEndeudamiento" type="button" value="Calcular" onclick="calcularEndeudamiento();">
+    
+</section>
+
+<section class="segundaSeccion">
+<img src="../img/deuda.png" alt="">
+<h4>Su capacidad de endeudamiento es de: </h4>
+<h2 id="endeudamiento"></h2>
+
+</section>
+</div>
+    <footer class="pie">
+        By Paola Cruz
+    </footer>
+
+    <script src="./calculo.js"></script>
+    <!-- <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script> -->
+    
+</body>
+</html>

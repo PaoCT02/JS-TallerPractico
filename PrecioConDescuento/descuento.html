@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+    <title>Descuentos</title>
+</head>
+
+<body>
+
+    <nav class="navegacion">
+        <a class="contenedorLogo" href="../index.html">
+            <img src="../img/brote.png" class="logo" alt="">HOME
+        </a>
+
+        <div class="lista">
+            <ul>
+                <li>
+                    <a href="../FigurasGeometricas/figuras.html">Taller #1</a>
+                </li>
+                <li>
+                    <a href="../PrecioConDescuento/descuento.html">Taller #2</a>
+                </li>
+                <li>
+                    <a href="../PromedioModaMediana/promedios.html">Taller #3</a>
+                </li>
+                <li>
+                    <a href="../AnalisisSueldo/analisisSueldo.html">Taller #4</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <header>
+        <h1>Calcular descuento</h1>
+    </header>
+    <section>
+
+        <div class="contenedorDescuento">
+            <div class="contenedorDescuento2">
+                <!-- <span class="subTitulo">Tipos de Descuentos </span> -->
+
+                <div class="listaDescuento">
+                    <div class="subContenedor">
+                        <div class="list">Visitas</div><img src="../img/visitas1.png" class="imgLista"
+                            onclick="cuponera(0);">
+                    </div>
+                    <div class="subContenedor">
+                        <div class="list">Recomendacion </div><img src="../img/recomendacion1.png" class="imgLista"
+                            onclick="cuponera(1);">
+                    </div>
+                    <div class="subContenedor">
+                        <div class="list">Regalo </div><img src="../img/regalo1.png" class="imgLista"
+                            onclick="cuponera(2);">
+                    </div>
+                    <div class="subContenedor">
+                        <div class="list">Otros </div><img src="../img/otros1.png" class="imgLista"
+                            onclick="cuponera(3);">
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="formulario">
+                <h2>Calcular</h2>
+                <label for="precio">Precio</label>
+                <input type="number" id="precio">
+                <label for="cupon" id="">Ingrese Codigo Cupon </label>
+                <input type="text" id="cupon" value="">
+                <button type="button" id="calcular" onclick="calcularPrecioFinal();">Calcular Precio Final</button>
+            </form>
+
+            <div class="precioFinal">
+                <h4>"El precio con descuento utilizando su CUPON!! es"</h4>
+                <img src="../img/precio.png" alt="">
+                <h2 id="precioFinal"></h2>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer class="pieDescuento">
+        By Paola Cruz.
+    </footer>
+
+    <script src="./descuento.js"></script>
+</body>
+
+</html>

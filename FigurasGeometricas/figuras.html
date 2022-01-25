@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navegacion">
+        <a class="contenedorLogo" href="../index.html"><img src="../img/brote.png" class="logo" alt="">HOME
+        </a>
+
+        <div class="lista">
+            <ul >
+                <li>
+                    <a href="../FigurasGeometricas/figuras.html">Taller #1</a>
+                </li>
+                <li>
+                    <a href="../PrecioConDescuento/descuento.html">Taller #2</a>
+                </li>
+                <li>
+                    <a href="../PromedioModaMediana/promedios.html">Taller #3</a>
+                </li>
+                <li>
+                    <a href="../AnalisisSueldo/analisisSueldo.html">Taller #4</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <header>
+        <h1>Figuras Geometricas</h1>
+    </header>
+    <div class="figuras">
+        <section class="contenedor">
+            <h3>Cuadrado</h3>
+            <img src="../img/cubo.png" alt="">
+            <label for="">Medida de lado</label>
+            <input type="number" name="" id="ladoCuadrado">
+            <input type="button" class="botones" value="Calcular Perimetro" onclick="perimetroCuadrado();">
+            <input type="button" class="botones" value="Calcular Area" onclick="areaCuadrado();">
+            <span>El Resultado es:</span>
+            <span id="resultadoCuadrado"></span>
+        </section>
+
+        <section class="contenedor">
+            <h3>Triangulo</h3>
+            <img src="../img/piramide.png" alt="">
+            <label for="">Medida de lado</label>
+            <input type="number" name="" id="ladoTriangulo">
+            <label for="">Base de Triangulo</label>
+            <input type="number" name="" id="baseTriangulo">
+            <label for="">Altura Triangulo</label>
+            <input type="number" name="" id="alturaTriangulo">
+            <input type="button" class="botones" value="Calcular Perimetro" onclick="perimetroTriangulo();">
+            <input type="button" class="botones" value="Calcular Area" onclick="areaTriangulo();">
+            <span>El Resultado es:</span>
+            <span id="resultadoTriangulo"></span>
+        </section>
+
+        <section class="contenedor">
+            <h3>Circulo</h3>
+            <img src="../img/esfera.png" alt="">
+            <label for="">Radio Circulo</label>
+            <input type="number" name="" id="radio">
+            <input type="button" class="botones" value="Calcular Perimetro" onclick="perimetroCirculo();">
+            <input type="button" class="botones" value="Calcular Area" onclick="areaCirculo();">
+            <input type="button" class="botones" value="Calcular Diametro" onclick="diametroCirculo();">
+            <span>El Resultado es:</span>
+            <span id="resultadoCirculo"></span>
+        </section>
+
+        <section class="contenedor">
+            <h3>Triángulo isósceles</h3>
+            <img src="../img/trianguloI.png" alt="">
+            <label for="">Lado 1</label>
+            <input type="number" name="" id="lado1">
+            <label for="">Lado 2</label>
+            <input type="number" name="" id="lado2">
+            <label for="">Base de Triangulo</label>
+            <input type="number" name="" id="baseIso">
+            <input type="button" class="botones" value="Calcular Altura" onclick="trianguloIsoseles();">
+            <span>El Resultado es:</span>
+            <span id="resultadoIso"></span>
+        </section>
+
+    </div>
+    <footer class="pie">
+        By Paola Cruz
+    </footer>
+    <script src="./figurasGeometricas.js"></script>
+</body>
+
+</html>

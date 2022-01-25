@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@500&display=swap" rel="stylesheet">
+    <title>Calcular</title>
+</head>
+
+<body>
+    <nav class="navegacion">
+        <a class="contenedorLogo" href="../index.html">
+            <img src="../img/brote.png" class="logo" alt="">HOME
+        </a>
+
+        <div class="lista">
+            <ul class="lista">
+                <li cla>
+                    <a href="../FigurasGeometricas/figuras.html">Taller #1</a>
+                </li>
+                <li>
+                    <a href="../PrecioConDescuento/descuento.html">Taller #2</a>
+                </li>
+                <li>
+                    <a href="../PromedioModaMediana/promedios.html">Taller #3</a>
+                </li>
+                <li>
+                    <a href="../AnalisisSueldo/analisisSueldo.html">Taller #4</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <header>
+        <h1>Calcular Promedios</h1>
+
+    </header>
+    <div class="contenedorPrincipal">
+        <section>
+            <div class="contenedorArrays">
+                <h3>Ingrese valores</h3>
+                <input type="number" id="nota" class="notatxt">
+                <div class="addDelete">
+                    <input type="button" value="Agregar Valores" class="boton" onclick="agregarLista()">
+                    <input type="button" class="boton" value="Borrar" id="borrame" onclick="borrarTodo();">
+                </div>
+
+
+                <div class="listaArrays" id="arrays">
+                    <div class="divArray" id="listaDeValores">
+                       
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="botonesPromedios">
+                <h3>Que Desea Calcular</h3>
+                <div class="contenedorBotones">
+                    <input class="promedio" type="button" value="Promedio" onclick="calcularMediaAritmetica();">
+                    <input class="mediana" type="button" value="Mediana" onclick="calcularMediana();">
+                    <input class="moda" type="button" value="Moda" onclick="calcularModa();">
+                    <input class="promedioPonderado" type="button" value="Promedio Ponderado"
+                        onclick="calcularPonderado();">
+                </div>
+                <h4 id="resultado">El resultado es:</h4>
+
+            </div>
+
+        </section>
+
+    </div>
+    <footer class="piePromedio">
+        By Paola Cruz
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
