@@ -1,10 +1,12 @@
-html,body{
+body{
     margin: 0;
     box-sizing: border-box;
     background-color: #EDD2F3;
     font-family: 'Changa', sans-serif;
     color: rgb(39, 38, 38);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .contenedorLogo{
@@ -57,6 +59,7 @@ ul{
 .seccionPrincipal{
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
     
 }
 .seccionHijo{
@@ -91,13 +94,12 @@ img{
 /*Descuento*/
 
 
-
 .contenedorDescuento{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    
+    flex: 1;
 }
 
 .contenedorDescuento2{
@@ -210,6 +212,7 @@ img{
     gap: 25px;
     text-align: center;
     justify-content: space-evenly;
+    flex:1;
     
 }
 
@@ -343,7 +346,7 @@ img{
     justify-content: center;
     align-items: center;
     gap: 100px;
- 
+    flex: 1;
     
 }
 
@@ -414,6 +417,7 @@ img{
     display: flex;
     gap: 100px;
     justify-content: center;
+    flex: 1;
 }
 
 .primeraSeccion{
@@ -456,4 +460,9 @@ img{
     color: rgb(255, 255, 255);
     border:1px solid rgb(150, 150, 150);
     cursor: pointer;
+}
+
+
+.sueldopie{
+    
 }
